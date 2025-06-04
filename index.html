@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para o amor da minha vida</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rhondex&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(128, 0, 0, 0.6);
+      color: #fff;
+      margin: 0;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #ffd1dc;
+      font-family: 'Rhondex', cursive;
+      font-size: 2.4rem;
+      text-align: center;
+      text-shadow: 0 0 8px #ff9bbd;
+    }
+
+    .contador {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      text-align: center;
+      font-weight: 600;
+      text-shadow: 0 0 4px #ff9bbd;
+    }
+
+    .texto {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ffd1dc;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(255, 209, 220, 0.7);
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .carrossel {
+      width: 300px;
+      height: 300px;
+      max-width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      box-shadow: 0 0 20px #ff9bbd;
+    }
+
+    .carrossel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .carrossel img.ativa {
+      opacity: 1;
+      position: relative;
+    }
+
+    .musica-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 10px;
+    }
+
+    .musica-btn {
+      background: #ffd1dc;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: #800000;
+      box-shadow: 0 0 8px #800000;
+      transition: background 0.3s ease;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .musica-btn:hover {
+      background: #ff8aad;
+    }
+
+    .coracao {
+      position: fixed;
+      top: -50px;
+      color: #ff9bbd;
+      font-size: 24px;
+      user-select: none;
+      pointer-events: none;
+      animation-name: cair;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes cair {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .texto {
+        font-size: 1rem;
+        padding: 15px;
+      }
+      .carrossel {
+        width: 90vw;
+        height: 90vw;
+        max-width: none;
+      }
+      .musica-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>❤️ De: Natã - Para: Ryanna ❤️</h1>
+
+  <div class="carrossel">
+    <img src="https://i.postimg.cc/K8TxD2Ky/Whats-App-Image-2025-06-04-at-14-32-05.jpg" alt="Foto nossa" class="ativa" loading="lazy" />
+    <img src="https://i.postimg.cc/VLdY5Mmv/Whats-App-Image-2025-06-04-at-14-32-05-1.jpg" alt="Foto nossa" loading="lazy" />
+    <img src="https://i.postimg.cc/pX4PjTLZ/Whats-App-Image-2025-06-04-at-15-24-44.jpg" alt="Foto nossa" loading="lazy" />
+  </div>
+
+  <div class="texto">
+    <p>"Esse seu jeito já me ganhou faz tempo, e você nem precisou me chamar pra sair."</p>
+    <p>"Você tem um jeitim que me faz até gostar de conversar com você, e olha que eu sou ruim de responder aqui viu kkkkkkkk"</p>
+    <p>"Posso falar uma boiolagem até tô querendo faz tempo? 😂 Sua voz é muito gostosa, mande mais áudios KKKKKK"</p>
+    <p>"Além de bonito, educado, fofo, romântico, cheiroso, sabe se vestir pra entrar na igreja, obrigado papai 🙌🏻"</p>
+    <p>"Você me faz muito bem, e não tem ideia do quanto me deixou feliz agora 🥹 Obrigada por ser tão especial, e por fazer com que eu me sinta importante pra você! 🥰 Eu só tento retribuir um pouquinho de tudo o que você faz!"</p>
+    <p>"Seus elogios, seu carinho, sua atenção e seu respeito. Com você eu sinto que eu não preciso fingir ser quem eu não sou, muito pelo contrário."</p>
+    <p>"Ela falando que hj em dia não se acha homem romântico mais, e eu rindo e dando graças a Deus que eu achei um dos últimos que restavam 🤭🙌🏻"</p>
+    <p>"que lindo meu amor! Essas mensagens fazem meu coração tão feliz, você nem imagina! Você é minha resposta pra muitas orações, espero ter sabedoria pra cuidar e amar você da forma que você o faz, pq eu não quero te perder"</p>
+    <p>"Você me completa, você é literalmente o meu lado calmo, meu lado de paz. Eu brinco assim mas é sério mesmo, eu sou muito nervosa e ansiosa, mas quando eu tô com você, é como se eu esquecesse grande parte das coisas. Agradeço todos os dias pela sua vida, pelo seu amor! ♥️"</p>
+    <p>
+      Todas essas frases são suas, eu salvei pra todas as vezes que eu ver, me lembrar da mulher incrível, educada, sábia e doce que está ao meu lado, a mulher que, a cada dia que passa, eu fico mais apaixonado, apaixonado por cada detalhe, por cada frase, por cada gesto, cada movimento... tudo em você me faz querer que seja você a minha futura esposa e mãe dos meus filhos, e pra cada vez que eu olhar essas frases, eu me lembrar da pessoa pela qual eu me apaixonei, e sempre tomar cuidado com o que eu falar, pra nunca te perder, nunca perder essa mulher incrível. Nunca senti um amor assim, nunca fui tratado da forma como você me trata, e era tudo que eu sempre quis, e não quero perder isso. Eu amo você, amo sua vida e espero nunca te decepcionar. ❤️
+    </p>
+  </div>
+
+  <div class="contador" id="contador"></div>
+
+  <div class="musica-container">
+    <a
+      href="https://open.spotify.com/intl-pt/track/3IsTYAUWhdQgqEV35GlJYB?si=a3cd5890700b43c4"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="musica-btn"
+      aria-label="Abrir música no Spotify"
+      >🎵 A primeira música que te dediquei</a
+    >
+  </div>
+
+  <script>
+    const imagens = document.querySelectorAll('.carrossel img');
+    let index = 0;
+
+    function mostrarImagem(i) {
+      imagens.forEach((img, idx) => {
+        img.classList.toggle('ativa', idx === i);
+      });
+    }
+
+    setInterval(() => {
+      index = (index + 1) % imagens.length;
+      mostrarImagem(index);
+    }, 3000);
+
+    const dataEspecial = new Date('2024-12-29T00:00:00');
+    const contador = document.getElementById('contador');
+
+    function atualizarContador() {
+      const agora = new Date();
+      let diff = agora - dataEspecial;
+
+      const meses = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
+      diff -= meses * (1000 * 60 * 60 * 24 * 30);
+
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      diff -= dias * (1000 * 60 * 60 * 24);
+
+      const horas = Math.floor(diff / (1000 * 60 * 60));
+      diff -= horas * (1000 * 60 * 60);
+
+      const minutos = Math.floor(diff / (1000 * 60));
+      diff -= minutos * (1000 * 60);
+
+      const segundos = Math.floor(diff / 1000);
+
+      contador.textContent = `Estamos juntos há ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos!`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+
+    function criarCoracao() {
+      const coracao = document.createElement('div');
+      coracao.classList.add('coracao');
+      coracao.textContent = '❤️';
+
+      coracao.style.left = Math.random() * window.innerWidth + 'px';
+
+      const duracao = 4000 + Math.random() * 3000;
+      coracao.style.animationDuration = duracao + 'ms';
+
+      const tamanho = 16 + Math.random() * 20;
+      coracao.style.fontSize = tamanho + 'px';
+
+      document.body.appendChild(coracao);
+
+      setTimeout(() => {
+        coracao.remove();
+      }, duracao);
+    }
+
+    setInterval(criarCoracao, 350);
+  </script>
+</body>
+</html>
